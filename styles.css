@@ -1,0 +1,24 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.grid-container{
+  padding: 20px;
+  max-width: 80%;
+  margin: auto;
+  display: grid;
+}
+
+
+.grid-container div{
+  border: solid black 1px;
+}
+
+/* Set size of grid div to make square size */
+.grid-container div:before{
+  content: '';
+  display:block;
+  padding-top:100%;
+}
